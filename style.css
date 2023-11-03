@@ -1,0 +1,80 @@
+* {
+	border: 1px solid red;
+}
+/* --------------------------------------------- DEBUG IS ABOVE --------------------------------------------- */
+/* --------------------------------------------- FONT IS BELOW --------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+html {
+	font-family: 'DM Serif Display', serif;
+	scroll-behavior: smooth;
+}
+/* --------------------------------------------- FONT IS ABOVE --------------------------------------------- */
+/* --------------------------------------------- GENERAL IS BELOW --------------------------------------------- */
+body {
+	background-color: #e89f7a;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Montserrat, sans-serif;
+    overflow: scroll;
+}
+.all-sections {
+	max-width: 95%;
+}
+/* --------------------------------------------- GENERAL IS ABOVE --------------------------------------------- */
+/* --------------------------------------------- HEADER/NAVBAR IS BELOW --------------------------------------------- */
+.header {
+	padding:0;
+	border:0;
+	margin:0;
+	height: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right bottom;
+}
+.navbar { /* defines box area for navbar at the top*/
+	margin-left:auto;
+	margin-right:auto;
+	border: auto;
+	width: 95%;
+	max-width: 100%;
+	display: flex;
+	justify-content: end;
+}
+.navbar-bottom { /* defines box area for navbar at the bottom*/
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+}
+
+header { /* defines border for header/navbar */
+	position: fixed;
+	width: 100%;
+}
+.header::after { /* makes sure that navbar does not disappear */
+	content: '';
+	display: table;
+	clear: both;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+nav li { /* makes navbar list a block */
+	display: inline-block;
+	margin: 12px;
+}
+/* --------------------------------------------- HEADER/NAVBAR IS ABOVE --------------------------------------------- */
+/* --------------------------------------------- SECTION1 IS BELOW --------------------------------------------- */
+#section1 {
+	height: 15em;
+	background-color: #f3f1e1;
+/* --------------------------------------------- SECTION1 IS ABOVE --------------------------------------------- */
+/* --------------------------------------------- SECTION2 IS BELOW --------------------------------------------- */
+#section2 {
+	background-color: blue;
+	height: 15em;
+}
